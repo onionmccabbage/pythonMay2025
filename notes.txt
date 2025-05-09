@@ -3,3 +3,35 @@ Python Introduction
 May 14-16 2025
 
 Toby Dussek
+
+ 9:30 Start
+11:00 morning break
+12:30 lunch (until 1:30)
+ 3:00 afternoon break
+ 4:30 end
+
+Getting ready to code
+    Getting Started: Python, editors and integrated development environments (IDEs)
+    Scripts & Syntax: Basic syntax, script execution, console input/output
+
+Core Python Syntax
+    Numbers: Integers and floats
+    Strings: Syntax, manipulation, formatting
+    Collections: Lists, tuples, sets, dictionaries
+    Accessing members of collections
+    Operators & Expressions: Arithmetic, comparison, logical operators
+    Conditions & Loops: if/else, for/while loops, continue/break
+    Range comprehensions functions
+
+Structuring Python code
+    Functions: invocation, passing in arguments and returning values
+    Objects and Classes: Declaration, creating instances, methods and attributes, inheritance
+    Getter/Setter decorators, name-mangling and slots
+    Modules and Packages: Writing and importing from modules
+    Exception Handling: try/except/finally
+
+Practical Python applications (covered depending on demand)
+    Files: Reading and writing text files. Using 'with'
+    Databases: Connecting, querying, and updating databases
+    Spreadsheets: Reading and writing data
+    Internet and APIs: Requesting web data, handling JSON
