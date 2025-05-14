@@ -21,3 +21,5 @@ if __name__ == '__main__':
     print(r)
     l = readFileLines()
     print(l) # we have a list
+    for i in l: # we may choose to iterate over this list to show each separate line
+        print(i)
