@@ -37,7 +37,7 @@ print(s, type(s))
 
 # iterating over collections (loops)
 # CAREFUL - a colon begins a block of code. The block of code is indented
-for i in t: # nothing special about 'i'
+for i in t: # nothing special about 'i' 
     print(i)
 for i in l:
     print(i)

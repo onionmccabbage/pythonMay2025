@@ -10,9 +10,15 @@ Toby Dussek
  3:00 afternoon break
  4:30 end
 
+In Python everything is an object (aka a class)
+
+
 Getting ready to code
     Getting Started: Python, editors and integrated development environments (IDEs)
     Scripts & Syntax: Basic syntax, script execution, console input/output
+
+...there will be an exercise after lunch - build something and maybe share what you built
+
 
 Core Python Syntax
     Numbers: Integers and floats
