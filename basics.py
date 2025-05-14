@@ -31,5 +31,26 @@ person['level'] = 'super user'
 print(person, type(person))
 
 # a set is a non ordinal mutable collection of UNIQUE members (of any data type)
-s = {4,5,6,7,7,7,8,9,0,7,7,3}
+s = {4,5,6,7,7,7,8,9,0,7,7,3} # by default Python will sort the order ascending
+
 print(s, type(s))
+
+# iterating over collections (loops)
+# CAREFUL - a colon begins a block of code. The block of code is indented
+for i in t: # nothing special about 'i'
+    print(i)
+for i in l:
+    print(i)
+
+# we can use a range to see members of a collection
+for i in range(0,3): # range will start, stop-before,step
+    print( l[i] )
+print('backwards')
+for i in range(3,0,-1): # loop backwards
+    print(l[i] )
+
+# the 'range' object is useful. it provides ranges of values without persisting them in memory.
+# The values are generated on demand
+# r = range(-10**100, 10**100, 100) # nb ** means raise to the power
+# for i in r:
+#     print(i)
