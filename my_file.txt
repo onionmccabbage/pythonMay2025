@@ -6,3 +6,6 @@ here is some important information
 here is some important information
 here is some important information
 here is some important information
+this is interestingwhat happens next? did you notice there is no new-line characterinterestingwe now have new lines
+each time it runs there will be \n on the end
+we ae in control!

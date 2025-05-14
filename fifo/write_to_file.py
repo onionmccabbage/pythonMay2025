@@ -6,6 +6,8 @@ def commitTofile(txt): # we may choose to receive zero or more arguments
         # 'with' is a very tidy way to work with objects
         with open('my_file.txt', 'at') as fout:
             fout.write(txt) # commit the incoming text to this file access object
+            # we may choose ot add a new line character
+            fout.write('\n') # \n is encoding for a new line. \t is tab
     except Exception as err:
         print(err)
 
