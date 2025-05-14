@@ -1,4 +1,4 @@
-Review 1 40 minutes (unti 2:25) - then show and tell
+Review 1 40 minutes (until 2:25) - then show and tell
 ========
 Write a game: Guess an integer between 0 and 100
 Ask the user to enter a guess, until they guess correctly 

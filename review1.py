@@ -17,6 +17,7 @@ def game():
     guess_counter = 0
     while True: # keep going!!
         guess_counter += 1
+        # really should try-except here....!
         guess = int(float(input('guess:'))) # make sure it's an int
         # conditionally act on the guess
         if guess == -2: # do they want a clue
@@ -28,9 +29,11 @@ def game():
             break
         elif guess > target: # is the guess too high
             print('too high')
+            continue
         elif guess < target: # is the guess too low (could be an else clause)
-                pass # just go to the next line
-                print('too low')
+            pass # just go to the next line
+            print('too low')
+            pass
         else:
             print(f'correct it was {target} you took {guess_counter} tries' )
             break
