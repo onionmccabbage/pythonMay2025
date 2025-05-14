@@ -26,7 +26,7 @@ Core Python Syntax
     Collections: Lists, tuples, sets, dictionaries
     Accessing members of collections
     Operators & Expressions: Arithmetic, comparison, logical operators
-    Conditions & Loops: if/else, for/while loops, continue/break
+    Conditions & Loops: if/else, for/while loops, continue/break  
     Range comprehensions functions
 
 Structuring Python code
