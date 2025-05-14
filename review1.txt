@@ -7,7 +7,6 @@ If it's too high or too low tell them
 When they get it right the game ends
 (Remember to validate that an integer was entered) 
 
-
 Optional
 --------
 entering -1 quits the game (tell them the answer)
