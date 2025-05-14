@@ -18,7 +18,7 @@ Getting ready to code
     Scripts & Syntax: Basic syntax, script execution, console input/output
 
 ...there will be an exercise after lunch - build something and maybe share what you built
-
+q - explain the types of exception
 
 Core Python Syntax
     Numbers: Integers and floats
