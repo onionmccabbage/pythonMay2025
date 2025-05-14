@@ -24,6 +24,8 @@ def getInfo():
         n = int(v) # here we 'cast' the type from a string to an integer
         # use formatting to tidy up the values
         return f'The number {n} was entered' # f lets us inject valus into our string
+    elif v.isdigit():
+        return 'it is a digital value'
     else:
         return f'The string {v} is not a number'
 
