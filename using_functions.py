@@ -13,13 +13,13 @@ def getInfo():
     # first, can it be an integer
     # using exception handlers
     try:
-        num = int(v) # we try to cast the string to an integer
-        print(f'Success - the integer is {num}')
+        # NB we cannot go from a string that looks like a float directly to an int
+        num = int(float(v)) # we try to cast the string to a number (int or float)
+        print(f'Success - the number is {num}')
     except Exception as err:
         print(f'There was a problem: {err}')
     finally:
         print('the finally block always runs, whether or not we have an exception')
-
     if v.isnumeric(): # isnumeric will check if a string contains only digits
         n = int(v) # here we 'cast' the type from a string to an integer
         # use formatting to tidy up the values
