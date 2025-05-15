@@ -3,7 +3,8 @@
 
 class Simple(): # the brackets are optional
     '''usually a class will initialize
-    name must be a non-empty string'''
+    name must be a non-empty string
+    episode must be a positive non-zero integer'''
     def __init__(self, name, episode): # all class functions take 'self' as an argument
         self.name = name # here self.name will call the name setter function
         self.episode = episode
@@ -19,6 +20,17 @@ class Simple(): # the brackets are optional
             self.__name = new_name
         else:
             raise TypeError('name must be a non-empty string')
+    @property
+    def episode(self): # this is the getter for 'episode'
+        '''we will return the current value for 'episode' '''
+        return self.__episode # the double underscore is called 'name mangling'
+    @episode.setter
+    def episode(self, new_episode): # this is the setter for 'episode'
+        '''only permit non-zero positive integer'''
+        if type(new_episode)==int and new_episode >0:
+            self.__episode = new_episode
+        else:
+            raise TypeError('episode must be a positive integer')
 
 class Digital(Simple): # this new clas inherits all the capabilities of the parent class
     '''we extend the simple class to include attributes related to digital'''
@@ -29,6 +41,7 @@ class Digital(Simple): # this new clas inherits all the capabilities of the pare
 # we may create instances of our class
 s1 = Simple('Play School', 32)
 s2 = Simple('News', 5667)
+# NB s.name will call the getter function for 'name'
 print(s1, type(s1), s1.name, s1.episode)
 
 d1 = Digital('Prog', 34, 564745664)
