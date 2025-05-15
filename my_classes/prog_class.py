@@ -5,6 +5,8 @@ class Simple(): # the brackets are optional
     '''usually a class will initialize
     name must be a non-empty string
     episode must be a positive non-zero integer'''
+    # slots let us li mit precicely which peroperties are permitted in this class
+    __slots__ = ('__name', '__episode')
     def __init__(self, name, episode): # all class functions take 'self' as an argument
         self.name = name # here self.name will call the name setter function
         self.episode = episode
@@ -36,7 +38,6 @@ class Simple(): # the brackets are optional
 class NotPosInt(TypeError):
     pass
 
-
 class Digital(Simple): # this new clas inherits all the capabilities of the parent class
     '''we extend the simple class to include attributes related to digital'''
     def __init__(self, name, episode, filesize):
@@ -57,6 +58,9 @@ try:
     s5 = Simple('totp', -99) # -ve not be permitted
 except TypeError as te:
     print(te)
+
+# we can work with the class properties
+s1.episode = 99 # this will call the setter method
 
 d1 = Digital('Prog', 34, 564745664)
 
