@@ -47,6 +47,7 @@ class Digital(Simple): # this new clas inherits all the capabilities of the pare
 # we may create instances of our class
 s1 = Simple('Play School', 32)
 s2 = Simple('News', 5667)
+s8 = Simple(episode=34, name='Demo')
 # NB s.name will call the getter function for 'name'
 print(s1, type(s1), s1.name, s1.episode)
 
