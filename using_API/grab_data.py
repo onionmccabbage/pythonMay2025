@@ -21,7 +21,7 @@ if __name__ == '__main__':
     # where to get arguments...
     # user input, read from file, get a sys.argv, grab from database....
     if len(sys.argv)>1:
-        chosenID = sys.argv[1]
+        chosenID = sys.argv[1] # remembber member 0 is the file name
     else:
         chosenID = 3
 
@@ -33,3 +33,5 @@ if __name__ == '__main__':
     print(user['website'])
     # how would we access the company city?
     print( user['address']['city'] )
+    print( user['address']['geo']['lat'] )
+    print( user['address']['geo']['lng'] )
