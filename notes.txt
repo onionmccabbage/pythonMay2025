@@ -10,34 +10,48 @@ Toby Dussek
  3:00 afternoon break
  4:30 end
 
+Additional libraries to install:
+> requests (did this Weds)
+- python -m pip install ....
+- py -3 -m pip install numpy
+- py -3 -m pip install pandas
+These will then be available for ever
+
+
 In Python everything is an object (aka a class)
 
-
 Getting ready to code
-    Getting Started: Python, editors and integrated development environments (IDEs)
-    Scripts & Syntax: Basic syntax, script execution, console input/output
+    > Getting Started: Python, editors and integrated development environments (IDEs)
+    > Scripts & Syntax: Basic syntax, script execution, console input/output
 
 ...there will be an exercise after lunch - build something and maybe share what you built
-q - explain the types of exception
+q - explain the types of exception (and their hierachy)
 
 Core Python Syntax
-    Numbers: Integers and floats
-    Strings: Syntax, manipulation, formatting
-    Collections: Lists, tuples, sets, dictionaries
-    Accessing members of collections
-    Operators & Expressions: Arithmetic, comparison, logical operators
-    Conditions & Loops: if/else, for/while loops, continue/break  
+    > Numbers: Integers and floats
+    > Strings: Syntax, manipulation, formatting
+    > Collections: Lists, tuples, sets, dictionaries
+    > Accessing members of collections
+    > Operators & Expressions: Arithmetic, comparison, logical operators
+    > Conditions & Loops: if/else, for/while loops, continue/break  
     Range comprehensions functions
 
 Structuring Python code
-    Functions: invocation, passing in arguments and returning values
+    > Functions: invocation, passing in arguments and returning values
     Objects and Classes: Declaration, creating instances, methods and attributes, inheritance
     Getter/Setter decorators, name-mangling and slots
     Modules and Packages: Writing and importing from modules
-    Exception Handling: try/except/finally
+    > Exception Handling: try/except/finally
 
 Practical Python applications (covered depending on demand)
-    Files: Reading and writing text files. Using 'with'
+    > Files: Reading and writing text files. Using 'with'
     Databases: Connecting, querying, and updating databases
     Spreadsheets: Reading and writing data
     Internet and APIs: Requesting web data, handling JSON
+
+
+
+all my code is here:
+    https://github.com/onionmccabbage/pythonMay2025/blob/main/basics.py
+
+There will be an opportunity to give end-of-course fedback
