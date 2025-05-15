@@ -35,3 +35,8 @@ if __name__ == '__main__':
     print( user['address']['city'] )
     print( user['address']['geo']['lat'] )
     print( user['address']['geo']['lng'] )
+
+    for (k,v) in user.items():
+        print(f'{k}:{v}')
+
+
