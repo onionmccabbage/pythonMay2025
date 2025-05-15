@@ -42,6 +42,7 @@ Structuring Python code
     > Getter/Setter decorators, name-mangling and slots
     Modules and Packages: Writing and importing from modules
     > Exception Handling: try/except/finally
+    > NB see the style guide https://peps.python.org/pep-0008/
 
 Practical Python applications (covered depending on demand)
     > Files: Reading and writing text files. Using 'with'
