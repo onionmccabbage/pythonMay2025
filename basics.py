@@ -45,7 +45,8 @@ for i in l:
 # we can use a range to see members of a collection
 for i in range(0,3): # range will start, stop-before,step
     print( l[i] )
-print('backwards')
+
+# print('backwards')
 for i in range(3,0,-1): # loop backwards
     print(l[i] )
 

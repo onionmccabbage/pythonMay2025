@@ -50,7 +50,6 @@ Practical Python applications (covered depending on demand)
     Internet and APIs: Requesting web data, handling JSON
 
 
-
 all my code is here:
     https://github.com/onionmccabbage/pythonMay2025/blob/main/basics.py
 
