@@ -33,6 +33,12 @@ class Simple(): # the brackets are optional
             self.__episode = new_episode
         else:
             raise TypeError('episode must be a positive integer')
+    # many things in Python have __XXXX__ 
+    # These all belong to Python. They are called 'dunder'
+    # we may choose how this class should print
+    def __str__(self): 
+        '''we override the built-in __str__ method with our own code'''
+        return f'This program is called {self.name} episode {self.episode}'
 
 # we can create our own exception classes
 class NotPosInt(TypeError):
