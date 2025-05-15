@@ -25,7 +25,7 @@ Getting ready to code
     > Scripts & Syntax: Basic syntax, script execution, console input/output
 
 ...there will be an exercise after lunch - build something and maybe share what you built
-q - explain the types of exception (and their hierachy)
+> explain the types of exception (and their hierachy)
 
 Core Python Syntax
     > Numbers: Integers and floats
@@ -40,18 +40,17 @@ Structuring Python code
     > Functions: invocation, passing in arguments and returning values
     > Objects and Classes: Declaration, creating instances, methods and attributes, inheritance
     > Getter/Setter decorators, name-mangling and slots
-    Modules and Packages: Writing and importing from modules
+    > Modules and Packages: Writing and importing from modules
     > Exception Handling: try/except/finally
     > NB see the style guide https://peps.python.org/pep-0008/
 
 Practical Python applications (covered depending on demand)
     > Files: Reading and writing text files. Using 'with'
-    Databases: Connecting, querying, and updating databases
-    Spreadsheets: Reading and writing data
-    Internet and APIs: Requesting web data, handling JSON
-
+    Databases: Connecting, querying, and updating databases 
+    Spreadsheets: Reading and writing data and data analysis
+    > Internet and APIs: Requesting web data, handling JSON
 
 all my code is here:
-    https://github.com/onionmccabbage/pythonMay2025/blob/main/basics.py
+    https://github.com/onionmccabbage/pythonMay2025/
 
 There will be an opportunity to give end-of-course fedback
