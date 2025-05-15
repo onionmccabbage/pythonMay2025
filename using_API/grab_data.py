@@ -27,3 +27,9 @@ if __name__ == '__main__':
 
     user = getData(chosenID) # we may choose to pass an id argument
     print(user)
+
+    # we may grab elements of the dict
+    print(user['name'])
+    print(user['website'])
+    # how would we access the company city?
+    print( user['address']['city'] )
