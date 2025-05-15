@@ -1,12 +1,17 @@
 # we may choose to define our own classes
 # these can encapsulate rigour, such as validation and sanity
 
-class Simple:
-    '''usually a clas will initialize'''
+class Simple(): # the brackets are optional
+    '''usually a class will initialize'''
     def __init__(self, name, episode): # all class functions take 'self' as an argument
         self.name = name
         self.episode = episode
 
+class Digital(Simple): # this new clas inherits all the capabilities of the parent class
+    '''we extend the simple class to include attributes related to digital'''
+    def __init__(self, name, episode, filesize):
+        super().__init__(name, episode)
+        self.filesize = filesize
 
 # we may create instances of our class
 s1 = Simple('Play School', 32)
