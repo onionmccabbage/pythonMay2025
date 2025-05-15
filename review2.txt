@@ -29,7 +29,7 @@ After you ask the user for category value, build a string something like this:
 Use the 'requests' library to make a 'get' call to this end-point API
 Tell the user what was returned by showing a nicely formatted string
 
-E.g. to access the 'name' property yopu would do this:
+E.g. to access the 'name' property you would do this:
     name = data['name']
 
 Remember to handle potential exceptions
