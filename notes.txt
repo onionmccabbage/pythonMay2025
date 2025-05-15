@@ -38,8 +38,8 @@ Core Python Syntax
 
 Structuring Python code
     > Functions: invocation, passing in arguments and returning values
-    Objects and Classes: Declaration, creating instances, methods and attributes, inheritance
-    Getter/Setter decorators, name-mangling and slots
+    > Objects and Classes: Declaration, creating instances, methods and attributes, inheritance
+    > Getter/Setter decorators, name-mangling and slots
     Modules and Packages: Writing and importing from modules
     > Exception Handling: try/except/finally
 
