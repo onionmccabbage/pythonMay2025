@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 
 # df = pd.read_csv('https://raw.githubusercontent.com/ismayc/pnwflights14/master/data/flights.csv')
-df = pd.read_csv('data/flights_jan.csv') # these two sources have different amounts of data
+df = pd.read_csv('./Data_Analysis/data/flights_jan.csv') # these two sources have different amounts of data
 
 print( df.head() )
 
@@ -53,22 +53,9 @@ df[df.ORIGIN_AIRPORT=='SEA'].groupby('DESTINATION_AIRPORT')[['DEPARTURE_DELAY']]
 result = df.groupby(['AIRLINE', 'FLIGHT_NUMBER'], sort=True)[['ARRIVAL_DELAY']].mean()
 result
 
-# punctuality meaning arrives on time or better
-punct_arr = df[df['arr_delay']<=0]
-punct_arr.max()
-# punctuality meaning departs on time or better
-punct_dep = df[df['dep_delay']<=0]
-punct_dep.min()
-# ... meaning arr and dep on time or better
-punct = punct_arr[df['dep_delay']<=0]
-punct.head()
-# .. meaning arr and dep exactly on time
-dep_ontime = punct[df['dep_delay']==0]
-arr_ontime = dep_ontime[df['arr_delay']==0]
-arr_ontime
-dep_ontime
+print('ean Difference:...................')
+print(df['ARRIVAL_TIME']-df['DEPARTURE_TIME'].mean())
 
-# ‐ Which airline arrives ahead of time most often
-df_top = df.groupby(['carrier'])['arr_delay'].agg(len)
-df_freq = df_top.sort_values(ascending=False).head(1).reset_index()
-df_freq
+# operands within data set
+# (Brians solution)
+print(df['ARRIVAL_TIME']-df['DEPARTURE_TIME'].mean())
