@@ -35,4 +35,9 @@ m = df[ df['salary']>120000 ]
 print( '----------', m[['salary']].mean() )
 
 # aggregration
-df[[]]
+print( df[['phd', 'salary']].agg(['min', 'max', 'mean']) )
+# mini challenge: aggregate the min and max for 'sex'
+df_g = df.groupby('sex')
+stats = ['min', 'max', 'mean']
+cols  = ['salary']
+print( df_g[cols].agg(stats) )
