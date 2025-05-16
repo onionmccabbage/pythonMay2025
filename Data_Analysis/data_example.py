@@ -19,4 +19,20 @@ print(df.iloc[3][['salary']])
 
 # Group and aggregate
 df_rank = df.groupby(['rank'])
-print(df_rank)
+print(df_rank) # we have a 'groupBy' object which we can further use
+print(df_rank.count())
+# further analysis
+df_n = df.groupby(['sex', 'salary'])
+print( df_n.max() )
+# mini-challenge
+# find the mean years of service per rank
+df_years = df.groupby('rank')
+# CAREFUL - [[]] is a lsit [] inside a slice []
+print( df_years[['service']].mean() ) # this shows just the service column mean()
+
+# find the mean salary for all people earning over 120000
+m = df[ df['salary']>120000 ]
+print( '----------', m[['salary']].mean() )
+
+# aggregration
+df[[]]
