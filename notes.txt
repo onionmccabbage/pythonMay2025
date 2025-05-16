@@ -35,8 +35,8 @@ Core Python Syntax
     > Operators & Expressions: Arithmetic, comparison, logical operators
     > Conditions & Loops: if/else, for/while loops, continue/break  
     > Range comprehensions functions
-    string formatting
-    the __str__ method
+    > string formatting
+    > the __str__ method
 
 Structuring Python code
     > Functions: invocation, passing in arguments and returning values
@@ -52,7 +52,13 @@ Practical Python applications (covered depending on demand)
     Spreadsheets: Reading and writing data and data analysis
     > Internet and APIs: Requesting web data, handling JSON
 
+Testing Python
+- doctest and pytest
+
+
+
 all my code is here:
     https://github.com/onionmccabbage/pythonMay2025/
 
 There will be an opportunity to give end-of-course fedback
+    https://forms.office.com/e/wWujB6zCWu
