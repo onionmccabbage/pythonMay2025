@@ -48,15 +48,15 @@ Structuring Python code
 
 Practical Python applications (covered depending on demand)
     > Files: Reading and writing text files. Using 'with'
-    Databases: Connecting, querying, and updating databases 
-    Spreadsheets: Reading and writing data and data analysis
+    > Databases: Connecting, querying, and updating databases 
+    > Spreadsheets: Reading and writing data and data analysis
     > Internet and APIs: Requesting web data, handling JSON
 
 > in Pandas, [] or () 
 > avoid creating a dict for airlines - use groupBy
 
 Testing Python
-- doctest and pytest
+> doctest and pytest
 
 
 Other resources:
