@@ -52,11 +52,9 @@ print(df[df.ORIGIN_AIRPORT=='SEA'].groupby('DESTINATION_AIRPORT')[['DEPARTURE_DE
 # A dataframe containing all flights grouped by airline and sorted by increasing flight duration
 result = df.groupby(['AIRLINE', 'FLIGHT_NUMBER'], sort=True)[['ARRIVAL_DELAY']].mean()
 print('''All Airlines\nGrouped By Flight number''')
-print(result)
+print(result.head(32))
 
 print('Mean Difference:...................')
-print(df['ARRIVAL_TIME']-df['DEPARTURE_TIME'].mean())
-
 # operands within data set
 # (Brians solution)
 print(df['ARRIVAL_TIME']-df['DEPARTURE_TIME'].mean())

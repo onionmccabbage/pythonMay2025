@@ -52,8 +52,8 @@ Practical Python applications (covered depending on demand)
     Spreadsheets: Reading and writing data and data analysis
     > Internet and APIs: Requesting web data, handling JSON
 
-q - in Pandas, [] or () 
-q - avoid creating a dict for airlines
+> in Pandas, [] or () 
+> avoid creating a dict for airlines - use groupBy
 
 Testing Python
 - doctest and pytest
