@@ -25,29 +25,29 @@ i = df[['DEPARTURE_DELAY', 'ARRIVAL_DELAY', 'DISTANCE']]
 print( i.agg(['min', 'mean', 'max', 'sum']) )
 
 # The number of flight records
-df['FLIGHT_NUMBER'].count()
+print( df['FLIGHT_NUMBER'].count() )
 
 
 # The number of unique airlines
-df.agg({'AIRLINE':['nunique']})
+print( df.agg({'AIRLINE':['nunique']}) )
 
 # How many unique aircraft are represented
-df['TAIL_NUMBER'].nunique() 
+print(df['TAIL_NUMBER'].nunique() )
 # or 
-df.TAIL_NUMBER.nunique()
+print(df.TAIL_NUMBER.nunique())
 
 # The greatest recorded delay (show the related data)
 longest_delay = df.ARRIVAL_DELAY.max()
 longest_delay
-df[df.ARRIVAL_DELAY == longest_delay]
+print(df[df.ARRIVAL_DELAY == longest_delay])
 
 # A dataframe containing all AA flights that have no missing data members
-df[df.AIRLINE == 'AA'].dropna()
-
+print(df[df.AIRLINE == 'AA'].dropna())
 
 # A dataframe containing all flights departing from SEA grouped by destination
 # NB here we use mean() to show actual data rather than just the groupby object
-df[df.ORIGIN_AIRPORT=='SEA'].groupby('DESTINATION_AIRPORT')[['DEPARTURE_DELAY']].mean() # nicely formatted data frame
+print('flights departing from SEA')
+print(df[df.ORIGIN_AIRPORT=='SEA'].groupby('DESTINATION_AIRPORT')[['DEPARTURE_DELAY']].mean()) # nicely formatted data frame
 
 # A dataframe containing all flights grouped by airline and sorted by increasing flight duration
 result = df.groupby(['AIRLINE', 'FLIGHT_NUMBER'], sort=True)[['ARRIVAL_DELAY']].mean()
